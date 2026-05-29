@@ -1,14 +1,16 @@
+using System.ComponentModel;
+
 public class Snake : Animal
 {
     private double length;
     private bool venomous;
 
     // constructor
-    public Snake(int id, string name, int age, string position, double length, bool venomous)
-    : base(id, name, age, position)
+    public Snake(string name, int age, Position position, double length, bool venomous) //changed constructor type to Position
+    : base(name, age, position) //removed iD ;it's automatically assigned so its not declared
     {
-        this.length() = length;
-        this.venomous() = venomous;
+        this.length = length;
+        this.venomous = venomous;
     }
 
     // setters and getters
@@ -17,7 +19,7 @@ public class Snake : Animal
         get { return length; }
         set { length = value; }
     }
-    public double Venomous
+    public bool Venomous //fixed property type to bool from double
     {
         get { return venomous;}
         set { venomous = value; }

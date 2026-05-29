@@ -13,8 +13,8 @@ public class Cat : Animal
     private Breed catBreed;
 
     // constructor
-    public Cat (int id, string name, int age, string position, Breed breed) : base(id,name, age, position) {
-        this.catBreed = breed;
+    public Cat (string name, int age, Position position, Breed breed) : base(name, age, position) { // Changed constructor type to Position (from string)
+        this.catBreed = breed; 
     }
 // getters and setters
     public Breed CatBreed

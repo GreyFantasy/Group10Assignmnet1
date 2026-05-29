@@ -58,7 +58,7 @@ public class Animal
     public override string ToString() //String for output
     {
     
-        return "ID: " + Id + " Name: " + Name + " Age: " + Age + " Postion: " + Position;
+        return "ID: " + Id + " Name: " + Name + " Age: " + Age + " Position: " + Position;
     
     }
 }
