@@ -12,19 +12,11 @@ public class Position
         set
         {
             if (value > 10)
-            {
                 x = 10;
-            }
-            
             else if (value < -10)
-            {
                 x = -10;
-            }
-
             else
-            {
                 x = value;
-            }
         }
     }
 
@@ -34,19 +26,11 @@ public class Position
         set
         {
             if (value > 10)
-            {
-                y = 10;
-            }
-            
+                y = 10;         
             else if (value < -10)
-            {
                 y = -10;
-            }
-
             else
-            {
                 y = value;
-            }
         }
     }
 
@@ -56,19 +40,11 @@ public class Position
         set
         {
             if (value > 10)
-            {
                 z = 10;
-            }
-            
             else if (value < -10)
-            {
                 z = -10;
-            }
-
             else
-            {
                 z = value;
-            }
         }
     }
 
@@ -86,14 +62,14 @@ public class Position
         z += dz;
 
         //Clamp final values to +/- 20.0
-        if (X > 20) X = 20;
-        if (X < -20) X = -20;
+        if (x > 20) x = 20;
+        if (x < -20) x = -20;
 
-        if (Y > 20) Y = 20;
-        if (Y < -20) Y = -20;
+        if (y > 20) y = 20;
+        if (y < -20) y = -20;
 
-        if (Z > 20) Z = 20;
-        if (Z < -20) Z = -20;
+        if (z > 20) z = 20;
+        if (z < -20) z = -20;
     }
 
     public override string ToString() //one decimal place format
