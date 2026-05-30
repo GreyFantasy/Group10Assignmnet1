@@ -86,11 +86,11 @@ public class Program
             
         }
 
-        Position test = new Position(10, 10, 10);
+         Position test = new Position(10, 10, 10);
 
             test.Move(100,100,100);
 
-            Console.WriteLine(test);
+            Console.WriteLine(test); 
 
         
 
